@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="icon" href="" />
+    <link rel="icon" href="assets/favicon.png" />
     <title>OtterlySolutions - Launch Today</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -17,12 +17,103 @@
 </head>
 <body>
     <header>
-        <div id="complete__nav" class="fixed-top d-flex justify-content-between align-items-center"> 
+        <div id="complete__nav" class="fixed-top d-flex  align-items-center"> 
+
+            <div class="container-fluid d-flex position__fix justify-content-between align-items-center">
             
-            <div class="logo__box">
+            <div class="logo__box d-flex">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/logo.png" class="py-2" alt="" width="" height="">
+                    <img src="assets/logo-blanco.svg" class="py-4" alt="logo Otterly" >
                 </a>
+            </div>
+
+            
+            <!-- Menu Mobile -->
+            <div class="menu__header d-flex align-items-center d-lg-none">
+
+                
+                <label id="close__collapse"for="check">
+                    <input type="checkbox" id="check" data-bs-toggle="collapse"  data-bs-target="#collapseMenu" href="#collapseMenu" role="button" aria-controls="collapseMenu"/> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="collapse"  id="collapseMenu">
+                <div class="collapse__inner">
+                    <ul>
+                        <li class="collapsable__li">
+                            <button class="collapsable__button d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#solutionsCollapse" aria-expanded="false" aria-controls="solutionsCollapse">
+                                <a class="collapsable__tittle" href="#">Solutions</a>
+                                <div class="arrow__box"><i class="fa-solid fa-chevron-down"></i></div>
+                            </button>
+                            <ul id="solutionsCollapse" class="pb-3 px-0 collapse">
+                                <li class="solutions__collapse__product p-4">
+                                    <a href="#">
+                                        <div class="solutions__collapse__product__content align-items-center">
+                                            <div  class="dropdown__icon__box mobile__icon"><i class="fa-solid fa-satellite"></i></div>
+                                            <span class="dropdown__container__tittle">OtterISS</span>
+                                        </div>
+                                        <div class="dropdown__container__text">
+                                                <p>Build your own modular CRM with an out-of-the-box set of modules and tools to meet your every day need</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="solutions__collapse__product p-4">
+                                    <a href="#">
+                                        <div class="solutions__collapse__product__content align-items-center">
+                                            <div  class="dropdown__icon__box"><i class="fa-solid fa-rocket"></i></div>
+                                            <span class="dropdown__container__tittle">OtterS/C</span>
+                                        </div>
+                                        <div class="dropdown__container__text">
+                                            <p>Launch into the universe with your custom made mobile application so that you and your users can take it anywhere your vision can reach</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="solutions__collapse__product p-4">
+                                    <a href="#">
+                                        <div class="solutions__collapse__product__content align-items-center">
+                                            <div  class="dropdown__icon__box"><i class="fa-solid fa-user-astronaut"></i></div>
+                                            <span class="dropdown__container__tittle">OtterNaut</span>
+                                        </div>
+                                        <div class="dropdown__container__text">
+                                            <p>Become one of million explorers to venture into the Internet Galaxy by setting up your WebSite to drive your business into the future</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </li class="collapsable__li">
+                        <li class="collapsable__li">
+                            <a class="collapsable__tittle" href="#">About Us</a>
+                        </li>
+                        <li class="collapsable__li">
+                            <a class="collapsable__tittle" href="#">Pricing</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="collapsable__footer d-flex justify-content-between align-items-center pb-4">
+                    <div class="dropdown-center language__box px-5" >
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="flag" src="assets/usflag.png" alt="">
+                            <span class="ml-1 mr-1">EN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu language__box__menu text-center mt-2">
+                            <li>
+                                <a class="" href="#">
+                                    <img class="flag" src="assets/spflag.png" alt="">Español
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="btn  contact__button mx-5" href="#">Launch Today</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Menu Large -->
@@ -89,7 +180,7 @@
                 </ul>
             </nav>
 
-            <div class="d-flex align-items-center">
+            <div class="d-none d-lg-flex  align-items-center ">
                 <div class="dropdown-center language__box" >
                     <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img class="flag" src="assets/usflag.png" alt="">
@@ -108,7 +199,7 @@
                     <a class="btn  contact__button" href="#">Launch Today</a>
                 </div>
             </div>
-
+        </div>
         </div>
 
     </header>
@@ -168,17 +259,6 @@
 
     </div>
 
-    <!-- Separador -->
-    <section class="separatorbox align-items-end">
-            <div class=" d-flex"><img src="assets/spaceotter.png"></div>
-            <div  class="separator">
-                <h3 class="mb-5">We create innovative, friendly and creative solutions for the big and small corporation.</h3> 
-                <h4>It is our vision for our products to be the standard of the industries and companies we serve.</h4>
-            </div>                    
-        
-        
-    </section>
-
     <!-- Section 3: Products -->
     <section id="products" class="">
         <h2 class="products__tittle">Choose Your Destination</h2>
@@ -223,7 +303,7 @@
 
 
     <section id="clients">
-        <div class="space__banner d-flex"><img src="assets/backgroundspacebanner.png"></div>
+        <div class="space__banner d-flex"></div>
         <h2 class="products__tittle clients__tittle">Meet our OtterlyFriends</h2>
         <div id="clients__container">
             
@@ -234,15 +314,15 @@
                 </div>
                 
                 <div class="clients__track__card">
-                    <img src="assets/clients1.png" alt="">
+                    <img src="assets/clients2.png" alt="">
                 </div>
 
                <div class="clients__track__card">
-                    <img src="assets/clients1.png" alt="">
+                    <img src="assets/clients3.webp" alt="">
                 </div>
                 
                 <div class="clients__track__card">
-                    <img src="assets/clients1.png" alt="">
+                    <img src="assets/clients4.webp" alt="">
                 </div>
 
                 <div class="clients__track__card">
@@ -250,7 +330,15 @@
                 </div>
 
                 <div class="clients__track__card">
-                    <img src="assets/clients1.png" alt="">
+                    <img src="assets/clients2.png" alt="">
+                </div>
+
+                <div class="clients__track__card">
+                    <img src="assets/clients3.webp" alt="">
+                </div>
+
+                <div class="clients__track__card">
+                    <img src="assets/clients4.webp" alt="">
                 </div>
 
                 <div class="clients__track__card">
@@ -258,30 +346,87 @@
                 </div>
 
                 <div class="clients__track__card">
-                    <img src="assets/clients1.png" alt="">
+                    <img src="assets/clients2.png" alt="">
                 </div>
 
                 <div class="clients__track__card">
-                    <img src="assets/clients1.png" alt="">
-                </div>
-
-                <div class="clients__track__card">
-                    <img src="assets/clients1.png" alt="">
-                </div>
-
-                <div class="clients__track__card">
-                    <img src="assets/clients1.png" alt="">
+                    <img src="assets/clients3.webp" alt="">
                 </div>
 
             </div>
         </div>
     </section>
 
+     <!-- Separador -->
+     <section class="separatorbox align-items-end d-lg-flex d-block">
+        <div class=" d-lg-flex"><img src="assets/spaceotter.png"></div>
+        <div  class="separator">
+            <h3 class="mb-5">We create innovative, friendly and creative solutions for the big and small corporation.</h3> 
+            <h4>It is our vision for our products to be the standard of the industries and companies we serve.</h4>
+        </div>                    
+    
+    
+</section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start">
+        <div class="footer__container">
+            <section class="footergrad">
+                <div class="container text-center text-md-start pt-4">
+                    <div class="row text-center justify-content-center">
+                        <img src="assets/logo-blanco.svg" alt="Logo OtterlySolutions" class="footer__logo">
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            
+                            <h6 class="fw-bold mb-4">Solutions</h6>
+                            <ul>
+                                <li><a href="#" class="" >OtterISS CRM</a></li>
+                                <li><a href="#" class="" >OtterS/C Apps</a></li>
+                                <li><a href="#" class="" >OtterNaut Websites</a></li>
+                                <li><a href="#" class="" >Custom Developments</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            
+                            <h6 class="fw-bold mb-4"><a href="#" class="" >About Us</a></h6>
+                            <h6 class="fw-bold mb-4"><a href="#" class="" >Pricing</a></h6>
+                            <h6 class="fw-bold mb-4"><a href="#" class="" >Terms and Conditions</a></h6>
+                        </div>
+                
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class=" fw-bold mb-4">Contact</h6>
+                            <p ><i class="fa-solid fa-house"></i> Miami, FL 33132, US</p>
+                            <p><i class="fas fa-envelope"></i> otterlysolutions@gmail.com</p>
+                            <p><i class="fa-brands fa-whatsapp"></i> + 54 911 2265 2490</p>
+                            <p><i class="fas fa-phone"></i> + 1 (305) 285 8445</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="text-center pb-4" style="">© 2023 Copyright: <a class="text-reset fw-bold" href="#">OtterlySolutions.com</a></div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
 </body>
 
 <script>
+    const toggleMenu = document.querySelector('#check');
+    const body = document.body;
 
+    toggleMenu.addEventListener('change', function() {
+    if (toggleMenu.checked) {
+        body.style.position = 'fixed';
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.position = '';
+        body.style.overflow = '';
+    }
+    });
 </script>
 
 </html>
