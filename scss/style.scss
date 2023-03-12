@@ -304,6 +304,7 @@ background: transparent;
     position: relative;
     overflow: hidden;
     
+    
 }
 
 
@@ -319,28 +320,85 @@ background: transparent;
     z-index: 1;
 }
 
+
+.carousel__item___wrapper{
+    
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+
+.carousel__img__container{
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+
+    
+
+}
 .carousel-item img{
-    position: relative;
+    padding: 50px   ;
+    max-width:100%;
+    max-height:100%;
     z-index: 2;
 }
 .overlaytext{
-    position: absolute;
-    top: 28%;
-    max-width: 480px;
+    position: relative;
     z-index: 3;
     color: #fff;
-    margin-left: 150px;
-    
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 50px;
+
+        
     h2{
-        font-size: 5rem;
+        font-size: 3rem;
         font-weight: 600;
         text-shadow: -2px -2px 6px rgba(242,247,161,0.85);
         margin: 0px;
+        margin-bottom: 10px;
     }    
     h3{
         font-size: 1.2rem;
         
     } 
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .carousel-inner{
+        margin: 80px 0;
+    }
+    .carousel__item___wrapper{
+        display: flex;
+        
+        
+    }
+    .carousel__img__container{
+        max-width: 480px;
+        height: 400px;
+        margin-right: 3rem;
+        
+    }
+    .overlaytext{
+        max-width: 480px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3rem;
+        padding: 0px;
+        h2{
+            font-size: 5rem;
+            
+        }    
+        
+    }
+    .carousel-item img{
+        position: relative;
+        
+        width:100%;
+    }
 }
 
 .button__banner{
@@ -393,37 +451,30 @@ background: linear-gradient(0deg, rgba(70,194,203,1) 74%, rgba(109,103,228,1) 10
 
 #products{
     background-color: black;
-    padding: 14rem 2rem;
+    padding: 6rem 1rem;
     margin-left: auto;
     margin-right: auto;
     max-width: 1280px;
-}
-
-@media only screen and (min-width: 992px) {
-
-	footer{
-        padding: 14rem 6rem;
-    }
 }
 
 .products__tittle{
     color: white;
     text-shadow: -2px -2px 10px rgb(109, 103, 228);
     font-weight: 900;
-    font-size: 3.5rem;
+    font-size: 1.8rem;
 }
 
 #products__grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(4,minmax(0,1fr));
-    margin-top: 8rem;
+    grid-template-rows: 2fr 1fr 1fr;
+    margin-top: 0;
 }
-
 
 .products__grid__element{
     display: block;
-    grid-column: span 2/span 2;
+    grid-column: 1/span 4;
     overflow: hidden;
     text-decoration: none;
     border-radius: 40px;
@@ -433,7 +484,8 @@ background: linear-gradient(0deg, rgba(70,194,203,1) 74%, rgba(109,103,228,1) 10
                     opacity: 0.9;
 				}
         &:first-child{
-            grid-row: span 2/span 2;
+            grid-row: 1/span 1;
+            align-self: end;
             background: rgb(69,60,103);
             background: linear-gradient(167deg, rgba(69,60,103,1) 39%, rgba(109,103,228,1) 100%);
             color: white;
@@ -454,6 +506,8 @@ background: linear-gradient(0deg, rgba(70,194,203,1) 74%, rgba(109,103,228,1) 10
             }
         }
         &:nth-child(2){
+            grid-row: 2/ span 1;
+            grid-column: 1/span 2;
             background-color: $secondary-yellow;
             color: black;
                 
@@ -461,13 +515,16 @@ background: linear-gradient(0deg, rgba(70,194,203,1) 74%, rgba(109,103,228,1) 10
         &:nth-child(3){
             background-color: $secondary-violet;
             color: white;
+            grid-row: 2/ span 1;
+            grid-column: 3/span 2;
         }
         &:nth-child(2),&:nth-child(3){
-            grid-row: span 1/ span 1;
-            grid-column: span 1/span 1;
+            align-self: center;
             padding: 1.5rem;
-            .products__grid__element__icon i{
-                font-size: 4.5rem;
+            .products__grid__element__icon {
+                width: 70%;
+                padding-top: 10px;
+                padding-left: 20px;
             }
             .products__grid__element__content{
                 height: 100%;
@@ -478,29 +535,84 @@ background: linear-gradient(0deg, rgba(70,194,203,1) 74%, rgba(109,103,228,1) 10
             }
         }
         &:last-child{
+            grid-row: 3/span 1;
             background-color: $primary-aqua;
+            align-self: start;
             .products__grid__element__content{
                 padding: 1.5rem;
                 color: white;
                 position: relative;
-            }
-            .products__grid__element__text,.products__grid__element__tittle{
-                max-width: 60%;
             }
             .products__grid__element__tittle h3{
                 font-size: 1.2rem;
                 font-weight: 500;
             }
             .products__grid__element__icon{
-                position: absolute;
-                right: 3.2rem;
-                top: 3.2rem;
+                display: inline-block;
+                
             }
-            .products__grid__element__icon i{
-                font-size: 4.5rem;
+            .products__grid__element__icon img{
+                width: 45%;
+                
             }
         }
 }
+
+@media only screen and (min-width: 854px) {
+    #products{
+	    padding: 10rem 2rem;
+    }
+    .products__tittle{
+        font-size: 3.5rem;
+    }
+    #products__grid {
+        margin-top: 8rem;
+        grid-template-rows: repeat(2,minmax(0,1fr));
+    }
+    .products__grid__element{
+        grid-column: span 2/span 2; 
+        
+            &:first-child{
+                grid-row: span 2/span 2;
+                align-self: stretch;
+                
+            }
+            &:nth-child(2),&:nth-child(3){
+                grid-row: span 1/ span 1;
+                grid-column: span 1/span 1;
+                align-self: stretch;
+                
+
+            }
+            &:last-child{
+                grid-row: 2/span 1;
+                grid-column: 3/span 2;
+                align-self: stretch;
+                .products__grid__element__icon{
+                    width: 45%;
+                    
+                    
+                }
+            }
+        }
+        .product__grid__element__content__wrapper{
+            width: 55%;
+        }
+    
+}
+
+@media only screen and (min-width: 1054px) {
+    .products__grid__element{
+        &:nth-child(2),&:nth-child(3){
+            .products__grid__element__icon {
+                width: 50%;
+                padding-top: 10px;
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
 
 #clients{
     background: rgb(109,103,228);
@@ -637,6 +749,7 @@ footer{
 
 
 
+
 .footer__container {
     padding: 0;
     margin-left: auto;
@@ -674,5 +787,4 @@ border-radius: 40px 40px 0px 0px;
         width: 20%;
     }
 }
-
 
