@@ -432,22 +432,7 @@ background: linear-gradient(0deg, rgba(70,194,203,1) 74%, rgba(109,103,228,1) 10
     
 }
 
-.separator{
-	padding: 50px;
-    text-align: left;
-    max-width: 50rem;
 
-        h3{
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: white;
-        }
-        h4{
-            font-size: 2rem;
-            font-weight: 600;
-            color:$primary-violet
-        }
-}
 
 #products{
     background-color: black;
@@ -639,12 +624,14 @@ background: linear-gradient(0deg, rgba(70,194,203,1) 74%, rgba(109,103,228,1) 10
     margin-left: auto;
     margin-right: auto;
     max-width: 1280px;
+    margin-bottom: 6rem;
 }
 
 @media only screen and (min-width: 992px) {
 
 	.clients__tittle{
         padding: 6rem 6rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -722,10 +709,57 @@ background: linear-gradient(0deg, rgba(70,194,203,1) 74%, rgba(109,103,228,1) 10
         }
 }
 
+.separator{
+	padding: 30px;
+    text-align: left;
+    max-width: 50rem;
+
+        h3{
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: white;
+        }
+        h4{
+            font-size: 2rem;
+            font-weight: 600;
+            color:$primary-violet
+        }
+}
+
+.mission__flag{
+    
+        img{
+            width: 60%;
+        }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .separator{
+        padding: 50px;
+        margin-right: 10rem;
+    }
+
+}
+
+@media only screen and (min-width: 1592px) {
+    .separator{
+        margin-right: 12rem;
+    }
+
+}
+
+@media only screen and (min-width: 1770px) {
+    .separator{
+        margin-right: 20rem;
+    }
+
+}
+
 footer{
     background: rgb(161,231,238);
     background: linear-gradient(0deg, rgba(161,231,238,1) 80%, rgba(70,194,203,1) 100%);
-    padding: 6rem 1rem 0 1rem;
+    padding: 6rem 0 0 0;
         ul{
             list-style-type: none;
             padding: 0;
@@ -747,18 +781,13 @@ footer{
         }
 }
 
-
-
-
 .footer__container {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    -webkit-box-shadow: inset 0px 0px 7px 10px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 0px 7px 10px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 0px 7px 10px rgba(0,0,0,0.75);
+    
     max-width: 1150px;
-    border-radius: 40px 40px 0px 0px;
+    border-radius: 0;
     background: rgb(109,103,228);
     background: linear-gradient(156deg, rgba(109,103,228,1) 25%, rgba(69,60,103,1) 81%);
     color: white;
@@ -770,6 +799,11 @@ footer{
 border-radius: 40px 40px 0px 0px;
 }
 
+.footer__logo__container{
+    justify-content: start;
+
+}
+
 .footer__logo{
     width: 50%;
     margin-bottom: 30px;
@@ -777,14 +811,61 @@ border-radius: 40px 40px 0px 0px;
 
 }
 
+.big__margin{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 480px) {
+    footer{
+        padding: 6rem 1rem 0 1rem;
+    }
+    .footer__container {
+        -webkit-box-shadow: inset 0px 0px 7px 10px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 7px 10px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 7px 10px rgba(0,0,0,0.75);
+        border-radius: 40px 40px 0px 0px;
+
+    }
+    .footer__logo__container{
+        justify-content: center;
+    
+    }
+
+}
+
+@media only screen and (min-width: 552px) {
+
+	.footer__logo{
+        width: 30%;
+    }
+}
+
 @media only screen and (min-width: 992px) {
 
 	footer{
-        padding: 6rem 13rem 0 13rem;
+        padding: 6rem 10rem 0 10rem;
     }
 
     .footer__logo{
         width: 20%;
     }
+}
+
+@media only screen and (min-width: 992px) {
+
+	.big__margin{
+        margin-left: 3rem;
+    }
+
+}
+
+@media only screen and (min-width: 1418px) {
+
+	footer{
+        padding: 6rem 13rem 0 13rem;
+    }
+
+    
 }
 
