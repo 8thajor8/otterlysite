@@ -387,8 +387,19 @@ body {
     .products__grid__element:first-child .products__grid__element__content {
       padding: 2.8rem 0 0 3rem;
       height: 100%; }
+    .products__grid__element:first-child .products__grid__content__total__wrapper {
+      display: inline-flex; }
+    .products__grid__element:first-child .products__grid__content__wrapper {
+      max-width: 50%; }
+    .products__grid__element:first-child .crmside__container {
+      width: 80%;
+      margin-right: 35px;
+      margin-left: 20px; }
+      .products__grid__element:first-child .crmside__container img {
+        width: 100%; }
     .products__grid__element:first-child .products__grid__element__text, .products__grid__element:first-child .products__grid__element__tittle {
-      max-width: 60%; }
+      margin: 0;
+      padding: 0; }
     .products__grid__element:first-child .products__grid__element__icon {
       object-fit: cover;
       max-width: 86%; }
@@ -406,7 +417,7 @@ body {
     grid-row: 2/ span 1;
     grid-column: 3/span 2; }
   .products__grid__element:nth-child(2), .products__grid__element:nth-child(3) {
-    align-self: center;
+    align-self: stretch;
     padding: 1.5rem; }
     .products__grid__element:nth-child(2) .products__grid__element__icon, .products__grid__element:nth-child(3) .products__grid__element__icon {
       width: 70%;
@@ -433,6 +444,10 @@ body {
     .products__grid__element:last-child .products__grid__element__icon img {
       width: 45%; }
 
+@media only screen and (min-width: 510px) {
+  .products__grid__element:first-child .crmside__container {
+    width: 60%; } }
+
 @media only screen and (min-width: 854px) {
   #products {
     padding: 10rem 2rem; }
@@ -446,10 +461,17 @@ body {
     .products__grid__element:first-child {
       grid-row: span 2/span 2;
       align-self: stretch; }
+      .products__grid__element:first-child .products__grid__content__total__wrapper {
+        display: flex;
+        flex-direction: column; }
+      .products__grid__element:first-child .crmside__container {
+        margin-top: 7%;
+        width: 40%; }
+      .products__grid__element:first-child .products__grid__element__text {
+        margin-right: 35px; }
     .products__grid__element:nth-child(2), .products__grid__element:nth-child(3) {
       grid-row: span 1/ span 1;
-      grid-column: span 1/span 1;
-      align-self: stretch; }
+      grid-column: span 1/span 1; }
     .products__grid__element:last-child {
       grid-row: 2/span 1;
       grid-column: 3/span 2;
@@ -460,6 +482,11 @@ body {
     width: 55%; } }
 
 @media only screen and (min-width: 1054px) {
+  .products__grid__element:first-child .products__grid__content__total__wrapper {
+    display: inline-flex;
+    flex-direction: row; }
+  .products__grid__element:first-child .crmside__container {
+    margin-top: 0; }
   .products__grid__element:nth-child(2) .products__grid__element__icon, .products__grid__element:nth-child(3) .products__grid__element__icon {
     width: 50%;
     padding-top: 10px;
