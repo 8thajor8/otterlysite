@@ -1,0 +1,113 @@
+.productsection__maincontainer{
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+    background: rgb(69,60,103);
+    background: linear-gradient(292deg, rgba(69,60,103,1) 39%, rgba(109,103,228,1) 100%);
+    position: relative;
+    width: 100%;
+    
+    
+}
+
+.productsection__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-image: url(../assets/backgroundiss.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: calc(100vh - 100px);
+    width: 100%;
+    z-index: 0;
+    transform: translate(-10%, 0%);
+
+}
+
+.productsection__serviceimg__container{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -70%);
+}
+
+.productsection__serviceimg__image{
+    width: 100%;
+}
+
+.productsection__textcontainer{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    font-weight: 600;
+    flex-direction: column;
+    max-width: 450px;
+    padding-left: 5rem;
+    
+    
+        h1{
+            font-weight: 600;
+            font-size: 5rem;
+            color: $primary-violet;
+            margin: 0;
+        }
+        p{
+            margin-top: 20px;
+            padding-bottom: 5rem;
+        }
+        .button__banner{
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+}
+
+.products__separatorbox{
+    display: flex;
+	background: #25223A;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.products__separator{
+    padding:50px;
+    color: white;
+    width: 70%;
+        h3{
+            font-size: 1.25rem;
+        }
+    
+}
+
+#features{
+    background-color: white;
+    padding-top: 5rem;
+    
+        .container{
+            .reverse{
+                flex-direction: row-reverse;
+            }
+        }
+}
+.features__image{
+    width: 100%;
+}
+
+.features__text{
+    padding-left: 4rem;
+    padding-right: 0;
+        h4{
+            color: $primary-aqua;
+            font-weight: 600;
+        }
+}
+
+.features__gradient{
+    height: 100px;
+    width: 100%;
+    background: rgb(70,194,203);
+    background: linear-gradient(0deg, rgba(70,194,203,1) 21%, rgba(255,255,255,1) 88%);
+}
