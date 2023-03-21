@@ -1,0 +1,119 @@
+.scbanner{
+    background-image: url(../assets/backgroundscmob.svg);
+}
+
+.productsection__serviceimg__container__sc{
+    position: absolute;
+    width: 65%;
+    top: 90%;
+    left: 75%;
+    transform: translate(-50%, -70%) rotate(-90deg);
+    overflow: hidden;
+    
+}
+
+.productsection__textcontainer__sc{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    font-weight: 600;
+    flex-direction: column;
+    margin: 0;
+    max-width: 450px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
+        h1{
+            font-weight: 600;
+            color: $primary-violet;
+            margin: 0;
+            margin-top: 30px;
+        }
+        h2{
+            font-size: 1.2rem;
+            max-width: 55%;
+        }
+        p{
+            margin-top: 20px;
+            padding-bottom: 2rem;
+            
+        }
+        .button__banner{
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+}
+
+@media only screen and (min-width: 630px) {
+    
+    .productsection__textcontainer__sc{
+        padding-left: 3rem;
+    }
+    .productsection__serviceimg__container__sc{
+        top: 88%;
+        left: 75%;
+        transform: translate(-50%, -70%) rotate(-45deg);
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    /* .productsection__background{
+        
+        transform: translate(-10%, 0%);
+    } */
+    
+    .scbanner{
+        background-image: url(../assets/backgroundsc.svg);
+    }
+    .productsection__serviceimg__container__sc{
+        
+        top: 55%;
+        left: 70%;
+        transform: translate(-50%, -70%) rotate(0deg);
+        padding: 0;
+        width: 50%;
+    }
+    .productsection__textcontainer__sc{
+        padding-left: 2rem;
+        padding-top: 3.5rem;
+        justify-content: center;
+            h1{
+                font-size: 5rem;
+                margin-top: 0;
+            }
+            h2{
+                max-width: 100%;
+            }
+            p{
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+    }
+    
+}
+
+@media only screen and (min-width: 1214px) {
+    .productsection__serviceimg__container__sc{
+        
+        top: 60%;
+        left: 60%;
+    }
+    .productsection__textcontainer__sc{
+        h2{
+                font-size: 1.5rem;
+            }
+    }
+    
+}
+
+@media only screen and (min-width: 1586px) {
+    .productsection__textcontainer__sc{
+        padding-left: 3.5rem;
+            p{
+                padding-bottom: 5rem;
+            }
+    }
+}

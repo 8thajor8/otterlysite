@@ -1,0 +1,115 @@
+.nautbanner{
+    background-image: url(../assets/backgroundnautmob.svg);
+}
+
+.productsection__serviceimg__container__naut{
+    position: absolute;
+    width: 85%;
+    top: 87%;
+    left: 56%;
+    transform: translate(-50%, -70%) ;
+    overflow: hidden;
+    
+}
+
+.productsection__textcontainer__naut{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    font-weight: 600;
+    flex-direction: column;
+    margin: 0;
+    max-width: 500px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: start;
+    padding-top: 6rem;
+    
+        h1{
+            font-weight: 600;
+            color: $primary-violet;
+            margin: 0;
+            margin-top: 30px;
+        }
+        h2{
+            
+            max-width: 70%;
+        }
+        p{
+            margin-top: 20px;
+            padding-bottom: 2rem;
+            
+        }
+        .button__banner{
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+}
+
+@media only screen and (min-width: 630px) {
+    
+    .productsection__textcontainer__naut{
+        padding-left: 3rem;
+        justify-content: center;
+        padding-top: 0;
+    }
+    .productsection__serviceimg__container__naut{
+        width: 65%;
+        top: 88%;
+        left: 75%;
+        transform: translate(-55%, -75%) rotate(-45deg);
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .productsection__serviceimg__container__naut{
+        top: 60%;
+        left: 75%;
+        transform: translate(-50%, -70%) rotate(0deg);
+        padding: 0;
+        width: 50%;
+    }
+    .productsection__textcontainer__naut{
+        padding-left: 2rem;
+        padding-top: 3.5rem;
+        justify-content: center;
+            h1{
+                font-size: 5rem;
+                margin-top: 0;
+            }
+            h2{
+                max-width: 100%;
+            }
+            p{
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+    }
+    
+}
+
+@media only screen and (min-width: 1214px) {
+    .nautbanner{
+        background-image: url(../assets/backgroundnaut.svg);
+    }
+
+    .productsection__serviceimg__container__naut{
+        
+        top: 65%;
+        left: 70%;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 1586px) {
+    .productsection__textcontainer__naut{
+        padding-left: 3.5rem;
+            p{
+                padding-bottom: 5rem;
+            }
+    }
+}
