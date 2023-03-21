@@ -730,7 +730,7 @@ background: transparent;
 
 #clients__track{
     display: flex;
-    width: calc(250px*12);
+    width: calc(250px*18);
     height: 80%;
     align-items: center;
     animation: scroll 40s linear infinite;
@@ -745,7 +745,7 @@ background: transparent;
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px * 6));
+        transform: translateX(calc(-250px * 9));
     }
     
 }

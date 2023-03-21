@@ -857,7 +857,7 @@ body {
 
 #clients__track {
   display: flex;
-  width: calc(250px*12);
+  width: calc(250px*18);
   height: 80%;
   align-items: center;
   animation: scroll 40s linear infinite; }
@@ -868,7 +868,7 @@ body {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translateX(calc(-250px * 6)); } }
+    transform: translateX(calc(-250px * 9)); } }
 
 .clients__track__card {
   height: 95%;
