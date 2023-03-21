@@ -954,7 +954,7 @@ footer {
   max-width: 1150px;
   border-radius: 0;
   background: #6d67e4;
-  background: linear-gradient(156deg, #6d67e4 25%, #453c67 81%);
+  /* background: linear-gradient(156deg, rgba(109,103,228,1) 25%, rgba(69,60,103,1) 81%); */
   color: white; }
 
 .footergrad {
@@ -975,9 +975,9 @@ footer {
   footer {
     padding: 6rem 1rem 0 1rem; }
   .footer__container {
-    -webkit-box-shadow: inset 0px 0px 7px 10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: inset 0px 0px 7px 10px rgba(0, 0, 0, 0.75);
-    box-shadow: inset 0px 0px 7px 10px rgba(0, 0, 0, 0.75);
+    /* -webkit-box-shadow: inset 0px 0px 7px 10px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 7px 10px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 7px 10px rgba(0,0,0,0.75); */
     border-radius: 40px 40px 0px 0px; }
   .footer__logo__container {
     justify-content: center; } }
