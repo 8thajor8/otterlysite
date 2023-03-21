@@ -327,6 +327,10 @@ background: transparent;
     z-index: 1;
 }
 
+.carousel-inner{
+    padding-top: 6rem;
+}
+
 
 .carousel__item___wrapper{
     
@@ -379,6 +383,10 @@ background: transparent;
 @media only screen and (min-width: 667px) {
     #otter__carousel{
         height: 60vh;
+    }
+
+    .carousel-inner{
+       padding-top: 0;
     }
 }
 

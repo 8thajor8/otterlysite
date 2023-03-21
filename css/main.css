@@ -581,6 +581,9 @@ body {
   opacity: 0.8;
   z-index: 1; }
 
+.carousel-inner {
+  padding-top: 6rem; }
+
 .carousel__item___wrapper {
   margin-top: 100px;
   margin-bottom: 50px; }
@@ -617,7 +620,9 @@ body {
 
 @media only screen and (min-width: 667px) {
   #otter__carousel {
-    height: 60vh; } }
+    height: 60vh; }
+  .carousel-inner {
+    padding-top: 0; } }
 
 @media only screen and (min-width: 992px) {
   #otter__carousel {
