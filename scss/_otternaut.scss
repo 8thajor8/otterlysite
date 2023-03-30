@@ -2,11 +2,14 @@
     background-image: url(../assets/backgroundnautmob.svg);
 }
 
+.hide__overflow{
+    overflow: hidden;
+}
 .productsection__serviceimg__container__naut{
     position: absolute;
-    width: 85%;
-    top: 87%;
-    left: 56%;
+    width: 45%;
+    top: 90%;
+    left: 78%;
     transform: translate(-50%, -70%) ;
     overflow: hidden;
     
@@ -56,7 +59,7 @@
         padding-top: 0;
     }
     .productsection__serviceimg__container__naut{
-        width: 65%;
+        width: 38%;
         top: 88%;
         left: 75%;
         transform: translate(-55%, -75%) rotate(-45deg);
@@ -70,7 +73,7 @@
         left: 75%;
         transform: translate(-50%, -70%) rotate(0deg);
         padding: 0;
-        width: 50%;
+        width: 35%;
     }
     .productsection__textcontainer__naut{
         padding-left: 2rem;
@@ -97,7 +100,7 @@
     }
 
     .productsection__serviceimg__container__naut{
-        
+        width: 25%;
         top: 65%;
         left: 70%;
     }
