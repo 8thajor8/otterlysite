@@ -90,7 +90,7 @@
                             <a class="collapsable__tittle" href="../index.html#separator">About Us</a>
                         </li>
                         <li class="collapsable__li">
-                            <a class="collapsable__tittle with__link" href="#">Pricing</a>
+                            <a class="collapsable__tittle with__link" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Pricing</a>
                         </li>
                         
                     </ul>
@@ -112,7 +112,7 @@
                         </ul>
                     </div>
                     <div>
-                        <a class="btn  contact__button mx-5 with__link" href="#">Launch Today</a>
+                        <a class="btn  contact__button mx-5 with__link" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Launch Today</a>
                     </div>
                 </div>
             </div>
@@ -175,7 +175,7 @@
                     </li>
                 
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Pricing</a>
                     </li>
                     
                 </ul>
@@ -197,11 +197,58 @@
                     </ul>
                 </div>
                 <div>
-                    <a class="btn  contact__button" href="#">Launch Today</a>
+                    <a class="btn  contact__button" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Launch Today</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Contact Us Modal -->
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+                
+                <div class="modal-header justify-content-center">
+                    <h1 class="modal-title" id="exampleModalLabel">Get Started Today!</h1>
+                    
+                </div>
+                
+                <div class="modal-body">
+                    <form method="post">
+                        <div class="form__input" >
+                            <input type="text" name="name" id="name" placeholder="Name*" class="input-bg">
+                        </div>
+                        <div class="form__input" >
+                            <input type="text" name="email" id="email" placeholder="E-mail*" class="input-bg">
+                        </div>
+                        <div class="form__input" >
+                            <input type="text" name="phone" id="phone" placeholder="Phone*" class="input-bg">
+                        </div>
+                        <div class="form__input" >
+                            <select class="form-select input-bg" aria-label="Default select example">
+                                <option selected>Select Product</option>
+                                <option value="1">OtterISS - CRM</option>
+                                <option value="2">OtterS/C - Applications</option>
+                                <option value="3">OtterNaut - Websites</option>
+                                <option value="4">Custom Developments</option>
+                            </select>
+                        </div>
+                        <div class="form__input" >
+                            <textarea name="comment" id="comment" placeholder="Your Message" class="input-bg"></textarea>
+                        </div>
+                        
+                    </form>
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary btn__aqua btn__shadow" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary send__message btn__shadow">Send Message</button>
+                </div>
+            
+            </div>
+        </div>
+    </div>
 
     <!-- Product Banner-->
     <section class="productsection__maincontainer hide__overflow">
@@ -213,7 +260,7 @@
             <h1>OtterNaut</h1>
             <h2>STUNNING WHILE ELEGANT WEBSITES</h2>
             <p>Getting your business started? Need an image overhaul? We've got you! Our designers will map out the experience for you while astonishing you with creative ideas and solutions that will make your company stand out and inspire your clients and partners to follow you on your journey.</p>
-            <div><a href="#" class="my-2 my-lg-4 btn button__banner">Launch Today</a></div>
+            <div><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" class="my-2 my-lg-4 btn button__banner">Launch Today</a></div>
         </div>  
     </section>
 
@@ -272,7 +319,7 @@
                                 <li><a href="otteriss.html" class="" >OtterISS CRM</a></li>
                                 <li><a href="ottersc.html" class="" >OtterS/C Apps</a></li>
                                 <li><a href="otternaut.html" class="" >OtterNaut Websites</a></li>
-                                <li><a href="#" class="" >Custom Developments</a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" class="" >Custom Developments</a></li>
                                 
                             </ul>
                         </div>
@@ -280,7 +327,7 @@
                         <div class="col-5 col-md-3  mx-auto mb-4">
                             
                             <h6 class="fw-bold mb-4"><a href="../index.html#separator" class="" >About Us</a></h6>
-                            <h6 class="fw-bold mb-4"><a href="#" class="" >Pricing</a></h6>
+                            <h6 class="fw-bold mb-4"><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" class="" >Pricing</a></h6>
                             <h6 class="fw-bold mb-4"><a href="#" class="" >Terms and Conditions</a></h6>
                         </div>
                 
