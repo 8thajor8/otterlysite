@@ -51,7 +51,7 @@ body{
 
 @supports (-moz-appearance: none) {
     .navbar-brand img {
-      width: 300px;
+      width: 100px;
     }
   }
 
@@ -161,6 +161,12 @@ body{
 	.navbar-brand img{
         width: 60%;
     }
+
+    @supports (-moz-appearance: none) {
+        .navbar-brand img {
+          width: 250px;
+        }
+      }
 }
 
 
