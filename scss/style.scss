@@ -406,11 +406,16 @@ background: transparent;
 .carousel-inner{
     padding-top: 6rem;
     z-index: 3;
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
 }
 
 
 .carousel__item___wrapper{
-    
+    height: 100%;
     margin-top: 100px;
     margin-bottom: 50px;
     
@@ -420,7 +425,7 @@ background: transparent;
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    height: 200px;
+    height: 25%;
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -441,6 +446,7 @@ background: transparent;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 50px;
+    height: 30%;
 
         
     h2{
@@ -532,6 +538,7 @@ background: transparent;
 
 .products__wrapper{
     position: relative;
+    overflow: hidden;
 }
 
 #products{
@@ -543,26 +550,15 @@ background: transparent;
 
 .meteor {
     position: absolute;
-    z-index: 0;
     pointer-events: none;
     opacity: 0.8;
     z-index: -1;
+    overflow: hidden;
     img {
         animation:  3s ease-in-out infinite alternate;
     }
 }
 
-/* @keyframes  {
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        transform: rotate(45deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
-} */
 
 .planet__hide{
     z-index: -1;
@@ -958,12 +954,27 @@ background: transparent;
 }
 
 .planet__hide__footer{
-    z-index: -1 ;
+    z-index: 2;
+    display: none;
+    
+    
+}
+
+@media only screen and (min-width: 830px) {
+    .planet__hide__footer{
+        display: block;
+    }
+
+}
+
+.footer__wrapper{
+    position: relative;
+    overflow: hidden;
 }
 
 footer{
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background: rgb(161,231,238);
     background: linear-gradient(0deg, rgba(161,231,238,1) 80%, rgba(70,194,203,1) 100%);
     padding: 6rem 0 0 0;
