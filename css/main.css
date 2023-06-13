@@ -403,6 +403,13 @@ body {
   color: white;
   height: 100px; }
 
+#navbar__container {
+  transition: background-color 0.3s ease-in-out; }
+
+.navbar__scrolled {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease-in-out; }
+
 .position__fix {
   padding: 0px 40px;
   position: relative;
@@ -613,7 +620,7 @@ body {
     color: white; }
 
 #otter__carousel {
-  background-image: url(/assets/backgroundstars.png);
+  background-image: url(/assets/mainbackground.svg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -622,6 +629,39 @@ body {
   overflow: hidden;
   height: 100vh; }
 
+.star {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none; }
+  .star img {
+    width: 30px;
+    height: 30px;
+    animation: glowingStar 2s ease-in-out infinite alternate;
+    color: white; }
+
+@keyframes glowingStar {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+.planet {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none; }
+  .planet img {
+    animation: rotatingPlanet 3s ease-in-out infinite alternate; }
+
+@keyframes rotatingPlanet {
+  0% {
+    transform: rotate(0); }
+  50% {
+    transform: rotate(45deg); }
+  100% {
+    transform: rotate(0); } }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -629,12 +669,13 @@ body {
   bottom: 0;
   left: 0;
   background: #6d67e4;
-  background: linear-gradient(6deg, #6d67e4 0%, black 49%);
+  background: linear-gradient(6deg, rgba(109, 103, 228, 0.6) 0%, rgba(0, 0, 0, 0.6) 49%);
   opacity: 0.8;
   z-index: 1; }
 
 .carousel-inner {
-  padding-top: 6rem; }
+  padding-top: 6rem;
+  z-index: 3; }
 
 .carousel__item___wrapper {
   margin-top: 100px;
@@ -715,12 +756,47 @@ body {
 .carousel-control-prev, .carousel-control-next {
   width: 5%; }
 
+.products__wrapper {
+  position: relative; }
+
 #products {
-  background-color: black;
   padding: 6rem 1rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 1280px; }
+
+.meteor {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.8;
+  z-index: -1; }
+  .meteor img {
+    animation: 3s ease-in-out infinite alternate; }
+
+/* @keyframes  {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+} */
+.planet__hide {
+  z-index: -1; }
+
+.star__overflow1 {
+  left: 90%;
+  top: 20%;
+  z-index: -1; }
+
+.star__overflow2 {
+  left: 92%;
+  top: 55%;
+  z-index: -1; }
 
 .products__tittle {
   color: white;
@@ -979,7 +1055,12 @@ body {
   .separator {
     margin-right: 20rem; } }
 
+.planet__hide__footer {
+  z-index: -1; }
+
 footer {
+  position: relative;
+  z-index: 1;
   background: #a1e7ee;
   background: linear-gradient(0deg, #a1e7ee 80%, #46c2cb 100%);
   padding: 6rem 0 0 0; }

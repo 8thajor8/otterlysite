@@ -20,6 +20,16 @@ body{
     color: white;
     height: 100px;
     
+    
+}
+
+#navbar__container{
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar__scrolled{
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease-in-out;
 }
 
 .position__fix{
@@ -304,7 +314,7 @@ background: transparent;
 }
 
 #otter__carousel{
-    background-image: url(/assets/backgroundstars.png);
+    background-image: url(/assets/mainbackground.svg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -316,6 +326,60 @@ background: transparent;
     
 }
 
+.star {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    
+    img {
+        width: 30px;
+        height: 30px;
+        animation: glowingStar 2s ease-in-out infinite alternate;
+        color: white;
+        
+    }
+    
+}
+
+
+
+@keyframes glowingStar {
+    0% {
+        opacity: 1;
+    }
+        50% {
+        opacity: 0.5;
+        
+    }
+        100% {
+        opacity: 1;
+    }
+}
+
+
+.planet {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    img {
+        animation: rotatingPlanet 3s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes rotatingPlanet {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+
 .overlay {
     position: absolute;
     top: 0;
@@ -323,13 +387,14 @@ background: transparent;
     bottom: 0;
     left: 0;
     background: rgb(109,103,228);
-    background: linear-gradient(6deg, rgba(109,103,228,1) 0%, rgba(0,0,0,1) 49%);
+    background: linear-gradient(6deg, rgba(109,103,228,0.6) 0%, rgba(0,0,0,0.6) 49%);
     opacity:0.8;
     z-index: 1;
 }
 
 .carousel-inner{
     padding-top: 6rem;
+    z-index: 3;
 }
 
 
@@ -454,14 +519,57 @@ background: transparent;
 
 
 
+.products__wrapper{
+    position: relative;
+}
 
 #products{
-    background-color: black;
     padding: 6rem 1rem;
     margin-left: auto;
     margin-right: auto;
     max-width: 1280px;
 }
+
+.meteor {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.8;
+    z-index: -1;
+    img {
+        animation:  3s ease-in-out infinite alternate;
+    }
+}
+
+/* @keyframes  {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+} */
+
+.planet__hide{
+    z-index: -1;
+}
+
+.star__overflow1{
+    left: 90%;
+    top: 20%;
+    z-index: -1;
+}
+
+.star__overflow2{
+    left: 92%;
+    top: 55%;
+    z-index: -1;
+}
+
+
 
 .products__tittle{
     color: white;
@@ -788,6 +896,7 @@ background: transparent;
     justify-content: center;
     
     
+    
 }
 
 .separator{
@@ -837,10 +946,17 @@ background: transparent;
 
 }
 
+.planet__hide__footer{
+    z-index: -1 ;
+}
+
 footer{
+    position: relative;
+    z-index: 1;
     background: rgb(161,231,238);
     background: linear-gradient(0deg, rgba(161,231,238,1) 80%, rgba(70,194,203,1) 100%);
     padding: 6rem 0 0 0;
+    
         ul{
             list-style-type: none;
             padding: 0;

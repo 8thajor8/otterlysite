@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/55d940ec4a.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
     <header>
-        <div id="complete__nav" class="fixed-top d-flex  align-items-center"> 
+        <div id="complete__nav " class="fixed-top d-flex  align-items-center"> 
 
-            <div class="container-fluid d-flex position__fix justify-content-between align-items-center">
+            <div id="navbar__container" class="container-fluid d-flex position__fix justify-content-between align-items-center">
             
             <div class="logo__box d-flex">
                 <a class="navbar-brand" href="index.html">
@@ -263,7 +264,7 @@
         
         <div class="overlay"></div>
         
-        <div class="carousel-inner">
+        <div class="carousel-inner animate__animated animate__backInUp">
             <div class="carousel-item active">
                 <div class="carousel__item___wrapper">
                     <div class="d-flex justify-content-center carousel__img__container "><img src="assets/otteriss.png" alt="Nutria mirando a camara" alt="..."></div>
@@ -310,58 +311,148 @@
             <span class="visually-hidden">Next</span>
         </button>
 
+        <div class="star" style="top: 15%; left: 30%;">
+            <img src="/assets/star1.svg" alt="Star Image" style="animation-delay: 1s;" >
+        </div>
+        
+        <div class="star" style="top: 65%; left: 65%;">
+            <img src="/assets/star2.svg" alt="Star Image" style="animation-delay: 0.3s;"  >
+        </div> 
+        
+        <div class="star" style="top: 15%; left: 70%;">
+            <img src="/assets/star3.svg" alt="Star Image" style="width: 60px; height: 60px;">
+        </div>
+        
+        <div class="star" style="top: 85%; left: 30%;">
+            <img src="/assets/star1.svg" alt="Star Image" style="width: 40px; height: 40px;animation-delay: 0.8s;">
+        </div>
+
+        <div class="planet" style="top: 22%; left: 5%;">
+            <img src="/assets/planet.svg" alt="" style="width: 40px; height: 40px;animation-delay: 1s;">
+        </div>
+        
+        <div class="planet" style="top: 55%; left: 47%;">
+            <img src="/assets/planet2.svg" alt="" style="width: 60px; height: 60px;animation-delay: 0.8s;">
+        </div> 
+        
+        <div class="planet" style="top: 70%; left: 10%;">
+            <img src="/assets/planet3.svg" alt="" style="width: 100px; height: 100px;animation-delay: 0.5s;">
+        </div>
+        
+        <div class="planet" style="top: 35%; left: 85%;">
+            <img src="/assets/planet4.svg" alt="" style="width: 120px; height: 120px;animation-delay: 2s;">
+        </div>
+
+        <div class="planet" style="top: 15%; left: 40%;">
+            <img src="/assets/planet5.svg" alt="" style="width: 60px; height: 60px;">
+        </div>
+
+        <div class="planet" style="top: 80%; left: 90%;">
+            <img src="/assets/planet6.svg" alt="" style="width: 90px; height: 90px;animation-delay: 1.8s;">
+        </div>
+
+
     </div>
 
     <!-- Section 3: Products -->
-    <section id="products" class="">
-        <h2 class="products__tittle">Choose Your Destination</h2>
-        
-        <div id="products__grid">
-        
-            <a href="pages/otteriss.html" class="products__grid__element" >
-                <div class="products__grid__element__content d-flex flex-column justify-content-between">
-                    <div class="products__grid__content__total__wrapper">
-                        <div class="d-flex flex-column justify-content-evenly products__grid__content__texts__wrapper">
-                            <div class="products__grid__element__tittle "><h3>OtterISS CRM</h3></div>
-                            <div class="products__grid__element__text"><p>We provide easy to configure building blocks so you can start constructing your own system in no time.</p></div>
+    
+    <section class="products__wrapper">
+        <div id="products" class="">
+            <h2 class="products__tittle">Choose Your Destination</h2>
+            
+            <div id="products__grid">
+            
+                <a href="pages/otteriss.html" class="products__grid__element" >
+                    <div class="products__grid__element__content d-flex flex-column justify-content-between">
+                        <div class="products__grid__content__total__wrapper">
+                            <div class="d-flex flex-column justify-content-evenly products__grid__content__texts__wrapper">
+                                <div class="products__grid__element__tittle "><h3>OtterISS CRM</h3></div>
+                                <div class="products__grid__element__text"><p>We provide easy to configure building blocks so you can start constructing your own system in no time.</p></div>
+                            </div>
+                            <div class="crmside__container container-fluid d-flex align-items-start align-items-md-center justify-content-center pb-4"><img src="assets/issicon.svg" alt=""></div>
                         </div>
-                        <div class="crmside__container container-fluid d-flex align-items-start align-items-md-center justify-content-center pb-4"><img src="assets/issicon.svg" alt=""></div>
-                    </div>
 
-                    <div class="products__grid__element__icon"><img src="assets/systemcapture.jpg" alt=""></div>
-                </div> 
-            </a>
+                        <div class="products__grid__element__icon"><img src="assets/systemcapture.jpg" alt=""></div>
+                    </div> 
+                </a>
 
-            <a href="pages/ottersc.html" class="products__grid__element" >
-                <div class="products__grid__element__content d-flex flex-column justify-content-center">
-                    <div class="products__grid__element__tittle"><h3>OtterS/C Apps</h3></div>
-                    
-                    <div class="products__grid__element__icon"><img src="assets/scicon.svg" alt=""></div>
-                </div> 
-            </a> 
+                <a href="pages/ottersc.html" class="products__grid__element" >
+                    <div class="products__grid__element__content d-flex flex-column justify-content-center">
+                        <div class="products__grid__element__tittle"><h3>OtterS/C Apps</h3></div>
+                        
+                        <div class="products__grid__element__icon"><img src="assets/scicon.svg" alt=""></div>
+                    </div> 
+                </a> 
 
-            <a href="pages/otternaut.html" class="products__grid__element" >
-                <div class="products__grid__element__content d-flex flex-column justify-content-center">
-                    <div class="products__grid__element__tittle"><h3>OtterNaut Websites</h3></div>
-                    
-                    <div class="products__grid__element__icon"><img src="assets/nauticon.svg" alt=""></div>
-                </div> 
-            </a>
+                <a href="pages/otternaut.html" class="products__grid__element" >
+                    <div class="products__grid__element__content d-flex flex-column justify-content-center">
+                        <div class="products__grid__element__tittle"><h3>OtterNaut Websites</h3></div>
+                        
+                        <div class="products__grid__element__icon"><img src="assets/nauticon.svg" alt=""></div>
+                    </div> 
+                </a>
 
-            <a href="#"  data-bs-toggle="modal" data-bs-target="#contactModal" class="products__grid__element" >
-                <div class="products__grid__element__content d-inline-flex align-items-center justify-content-between">
-                    <div class="product__grid__element__content__wrapper">
-                        <div class="products__grid__element__tittle"><h3>Custom Development Service</h3></div>
-                        <div class="products__grid__element__text"><p>If none of our products meet your needs, reach out to our OtterlyTeam for custom tailored products made just for you!</p></div>
-                    </div>
-                    <div class="products__grid__element__icon text-center"><img src="assets/customicon.svg" alt=""></div>
-                </div> 
-            </a> 
+                <a href="#"  data-bs-toggle="modal" data-bs-target="#contactModal" class="products__grid__element" >
+                    <div class="products__grid__element__content d-inline-flex align-items-center justify-content-between">
+                        <div class="product__grid__element__content__wrapper">
+                            <div class="products__grid__element__tittle"><h3>Custom Development Service</h3></div>
+                            <div class="products__grid__element__text"><p>If none of our products meet your needs, reach out to our OtterlyTeam for custom tailored products made just for you!</p></div>
+                        </div>
+                        <div class="products__grid__element__icon text-center"><img src="assets/customicon.svg" alt=""></div>
+                    </div> 
+                </a> 
+            
+            </div>
+
+            
+
+        </div>
+        <div class="meteor" style="top: 85%; left: 10%;">
+            <img src="/assets/meteor2.svg" alt="" style="width: 100px; height: 100px;animation-delay: 0.5s;">
+        </div>
         
+        <div class="meteor" style="top: 15%; left: 75%;">
+            <img src="/assets/meteor.svg" alt="" style="width: 120px; height: 120px;animation-delay: 2s;">
         </div>
 
-    </section>
+        <div class="meteor" style="top: 15%; left: 65%;">
+            <img src="/assets/meteor.svg" alt="" style="width: 60px; height: 60px;">
+        </div>
 
+        <div class="meteor" style="top: 84%; left: 70%;">
+            <img src="/assets/meteor2.svg" alt="" style="width: 90px; height: 90px;animation-delay: 1.8s;">
+        </div>
+
+        <div class="star star__overflow1">
+            <img src="/assets/star3.svg" alt="" style="width: 50px; height: 50px;animation-delay: 0.5s;">
+        </div>
+
+        <div class="star" style="top: 75%; left: -10%;">
+            <img src="/assets/star2.svg" alt="" style="width: 40px; height: 40px;animation-delay: 1s;">
+        </div>
+
+        <div class="star" style="top: 35%; left: -5%;">
+            <img src="/assets/star2.svg" alt="" style="width: 30px; height: 30px;animation-delay: 0.7s;">
+        </div>
+
+        <div class="star star__overflow2">
+            <img src="/assets/star2.svg" alt="" style="width: 30px; height: 30px;animation-delay: 0.7s;">
+        </div>
+
+        <div class="planet planet__hide" style="top: 30%; left: 65%;">
+            <img src="/assets/planet4.svg" alt="" style="width: 30px; height: 30px;animation-delay: 0.7s;">
+        </div>
+
+        <div class="planet planet__hide" style="top: 90%; left: 40%;">
+            <img src="/assets/planet3.svg" alt="" style="width: 50px; height: 50px;animation-delay: 0.3s;">
+        </div>
+
+        <div class="planet planet__hide" style="top: 28%; left: 20%;">
+            <img src="/assets/planet5.svg" alt="" style="width: 50px; height: 50px;animation-delay: 0.9s;">
+        </div>
+    </section>
+    
+    
 
     <section id="clients">
         <div class="space__banner d-flex"></div>
@@ -448,60 +539,98 @@
 
     <!-- Separador -->
     <section id="separator" class="separatorbox align-items-center d-lg-flex d-block">
-        <div class="d-lg-flex mission__flag text-center align-items-center justify-content-end"><img src="assets/otterflag.png"></div>
+        <div class="d-lg-flex mission__flag text-center align-items-center justify-content-end" data-aos="zoom-in-up"><img src="assets/otterflag.png"></div>
         <div  class="separator">
-            <h3 class="mb-5">We create innovative, friendly and creative solutions for the big and small corporation.</h3> 
-            <h4>It is our vision for our products to be the standard of the industries and companies we serve.</h4>
-        </div>                    
+            <h3 class="mb-5" data-aos="flip-left">We create innovative, friendly and creative solutions for the big and small corporation.</h3> 
+            <h4 data-aos="flip-right">It is our vision for our products to be the standard of the industries and companies we serve.</h4>
+        </div>   
+        
+        
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start">
-        <div class="footer__container">
-            <section class="footergrad">
-                <div class="container-lg text-start pt-4 container-fluid">
-                    <div class="row footer__logo__container mb-4">
-                        <img src="assets/logo-blanco.svg" alt="Logo OtterlySolutions" class="footer__logo">
-                    </div>
-                    <div class="row mx-2 mx-md-0">
-                        <div class="col-5 col-md-4  mb-4  big__margin">
-                            
-                            <h6 class="fw-bold mb-4">Solutions</h6>
-                            <ul>
-                                <li><a href="pages/otteriss.html" class="" >OtterISS CRM</a></li>
-                                <li><a href="pages/ottersc.html" class="" >OtterS/C Apps</a></li>
-                                <li><a href="pages/otternaut.html" class="" >OtterNaut Websites</a></li>
-                                <li><a href="#"  data-bs-toggle="modal" data-bs-target="#contactModal" class="" >Custom Developments</a></li>
+    <section class="products__wrapper">
+        <footer class="text-center text-lg-start">
+            <div class="footer__container">
+                <section class="footergrad">
+                    <div class="container-lg text-start pt-4 container-fluid">
+                        <div class="row footer__logo__container mb-4">
+                            <img src="assets/logo-blanco.svg" alt="Logo OtterlySolutions" class="footer__logo">
+                        </div>
+                        <div class="row mx-2 mx-md-0">
+                            <div class="col-5 col-md-4  mb-4  big__margin">
                                 
-                            </ul>
-                        </div>
+                                <h6 class="fw-bold mb-4">Solutions</h6>
+                                <ul>
+                                    <li><a href="pages/otteriss.html" class="" >OtterISS CRM</a></li>
+                                    <li><a href="pages/ottersc.html" class="" >OtterS/C Apps</a></li>
+                                    <li><a href="pages/otternaut.html" class="" >OtterNaut Websites</a></li>
+                                    <li><a href="#"  data-bs-toggle="modal" data-bs-target="#contactModal" class="" >Custom Developments</a></li>
+                                    
+                                </ul>
+                            </div>
 
-                        <div class="col-5 col-md-3  mx-auto mb-4">
-                            
-                            <h6 class="fw-bold mb-4"><a href="#separator" class="" >About Us</a></h6>
-                            <h6 class="fw-bold mb-4"><a href="#"  data-bs-toggle="modal" data-bs-target="#contactModal" class="" >Pricing</a></h6>
-                            <h6 class="fw-bold mb-4"><a href="#" class="" >Terms and Conditions</a></h6>
-                        </div>
-                
-                        <div class="col-11 col-md-4  mx-auto mb-md-0 mb-4">
-                            <h6 class=" fw-bold mb-4">Contact</h6>
-                            <p ><i class="fa-solid fa-house"></i> Miami, FL 33132, US</p>
-                            <p><i class="fas fa-envelope"></i> otterlysolutions@gmail.com</p>
-                            <p><i class="fa-brands fa-whatsapp"></i> + 54 911 2265 2490</p>
-                            <p><i class="fas fa-phone"></i> + 1 (305) 285 8445</p>
+                            <div class="col-5 col-md-3  mx-auto mb-4">
+                                
+                                <h6 class="fw-bold mb-4"><a href="#separator" class="" >About Us</a></h6>
+                                <h6 class="fw-bold mb-4"><a href="#"  data-bs-toggle="modal" data-bs-target="#contactModal" class="" >Pricing</a></h6>
+                                <h6 class="fw-bold mb-4"><a href="#" class="" >Terms and Conditions</a></h6>
+                            </div>
+                    
+                            <div class="col-11 col-md-4  mx-auto mb-md-0 mb-4">
+                                <h6 class=" fw-bold mb-4">Contact</h6>
+                                <p ><i class="fa-solid fa-house"></i> Miami, FL 33132, US</p>
+                                <p><i class="fas fa-envelope"></i> otterlysolutions@gmail.com</p>
+                                <p><i class="fa-brands fa-whatsapp"></i> + 54 911 2265 2490</p>
+                                <p><i class="fas fa-phone"></i> + 1 (305) 285 8445</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            
-            <div class="text-center pb-4">© 2023 Copyright: <a class="text-reset fw-bold" href="index.html">OtterlySolutions.com</a></div>
-        </div>
-    </footer>
+                </section>
+                
+                <div class="text-center pb-4">© 2023 Copyright: <a class="text-reset fw-bold" href="index.html">OtterlySolutions.com</a></div>
+            </div>
+            <div class="planet planet__hide__footer" style="top: 30%; left: 5%;">
+                <img src="/assets/planet6.svg" alt="" style="width: 80px; height: 80px;animation-delay: 0.7s;">
+            </div>
+
+            <div class="planet planet__hide__footer" style="top: 80%; left: 8%;">
+                <img src="/assets/planet5.svg" alt="" style="width: 70px; height: 70px;animation-delay: 0.3s;">
+            </div>
+
+            <div class="planet planet__hide__footer" style="top: 28%; left: 90%;">
+                <img src="/assets/planet4.svg" alt="" style="width: 50px; height: 50px; animation-delay: 0.9s;">
+            </div>
+
+            <div class="planet planet__hide__footer" style="top: 75%; left: 88%;">
+                <img src="/assets/planet3.svg" alt="" style="width: 90px; height: 90px; animation-delay: 0.9s;">
+            </div>
+        </footer>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 <script>
+    
+    AOS.init();
+
+    window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar__container');
+    
+    var navbarHeight = navbar.offsetHeight;
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollPosition > navbarHeight) {
+        navbar.classList.add('navbar__scrolled');
+        
+    } else {
+        navbar.classList.remove('navbar__scrolled');
+        
+    }
+    });
+
     const toggleMenu = document.querySelector('#check');
     const body = document.body;
     let accionMenu = () =>{ 
@@ -527,6 +656,8 @@
             element.classList.remove('show');
         }
     });
+
+
 
 </script>
 
