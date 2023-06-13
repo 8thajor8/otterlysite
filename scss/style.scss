@@ -47,8 +47,13 @@ body{
 .navbar-brand img{
     width: 100%;
     
-    
 }
+
+@supports (-moz-appearance: none) {
+    .navbar-brand img {
+      width: 300px;
+    }
+  }
 
 .menu__header{
     margin-left: auto;
