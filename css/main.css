@@ -42,7 +42,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   background: #453c67;
   background: linear-gradient(292deg, #453c67 39%, #6d67e4 100%);
   position: relative;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
+
+.hide__iss__planet {
+  display: none; }
 
 .productsection__background {
   position: absolute;
@@ -57,14 +61,19 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   z-index: 0; }
 
 .issbanner {
-  background-image: url(../assets/backgroundissmob.svg); }
+  background-image: url(../assets/backgroundissmob.svg);
+  background-size: cover; }
 
 .productsection__serviceimg__container {
   position: absolute;
   width: 65%;
-  top: 90%;
-  left: 60%;
-  transform: translate(-50%, -70%); }
+  top: 65%;
+  left: 20%; }
+
+@media only screen and (min-width: 680px) {
+  .productsection__serviceimg__container {
+    top: 45%;
+    left: 30%; } }
 
 .productsection__serviceimg__image {
   width: 100%; }
@@ -114,14 +123,18 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   .productsection__textcontainer {
     padding-left: 3rem; } }
 
+@media only screen and (min-width: 956px) {
+  .hide__iss__planet {
+    display: block; } }
+
 @media only screen and (min-width: 992px) {
   .productsection__background {
     transform: translate(-10%, 0%); }
   .issbanner {
     background-image: url(../assets/backgroundiss.svg); }
   .productsection__serviceimg__container {
-    top: 60%;
-    left: 70%;
+    top: 22%;
+    left: 47%;
     padding: 0;
     width: 50%; }
   .productsection__textcontainer {
@@ -142,15 +155,15 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 @media only screen and (min-width: 1214px) {
   .productsection__serviceimg__container {
-    top: 65%;
-    left: 65%; } }
+    top: 9%;
+    left: 35%; } }
 
 #features {
   background-color: white;
   padding-top: 5rem; }
 
 .features__image__container {
-  width: 50%;
+  width: 35%;
   margin-bottom: 1rem; }
 
 .features__image {
@@ -165,8 +178,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 .features__gradient {
   height: 100px;
   width: 100%;
-  background: #46c2cb;
-  background: linear-gradient(0deg, #46c2cb 21%, white 88%); }
+  /* background: rgb(70,194,203); */
+  /* background: linear-gradient(0deg, rgba(70,194,203,1) 21%, rgba(255,255,255,1) 88%); */ }
 
 @media only screen and (min-width: 992px) {
   .container .reverse {
@@ -174,7 +187,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   .features__text {
     padding-left: 3.5rem; }
   .features__image__container {
-    width: 25%; } }
+    width: 20%; } }
+
+@media only screen and (min-width: 1214px) {
+  .features__image__container {
+    width: 15%; } }
 
 .scbanner {
   background-image: url(../assets/backgroundscmob.svg); }
