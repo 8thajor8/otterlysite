@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/55d940ec4a.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/55d940ec4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
 
 </head>
@@ -20,7 +22,7 @@
     <header>
         <div id="complete__nav" class="fixed-top d-flex  align-items-center"> 
 
-            <div class="container-fluid d-flex position__fix justify-content-between align-items-center">
+            <div id="navbar__container" class="container-fluid d-flex position__fix justify-content-between align-items-center">
             
             <div class="logo__box d-flex">
                 <a class="navbar-brand" href="../index.html">
@@ -253,10 +255,10 @@
     <!-- Product Banner-->
     <section class="productsection__maincontainer hide__overflow">
         <div class="productsection__background nautbanner"></div>
-        <div class="productsection__serviceimg__container__naut">
+        <div class="productsection__serviceimg__container__naut animate__animated animate__zoomIn">
             <img class="productsection__serviceimg__image" src="../assets/otternautbanner.svg ">
         </div>
-        <div class="productsection__textcontainer__naut d-flex ">
+        <div class="productsection__textcontainer__naut d-flex animate__animated animate__backInUp">
             <h1>OtterNaut</h1>
             <h2>STUNNING WHILE ELEGANT WEBSITES</h2>
             <p>Getting your business started? Need an image overhaul? We've got you! Our designers will map out the experience for you while astonishing you with creative ideas and solutions that will make your company stand out and inspire your clients and partners to follow you on your journey.</p>
@@ -264,36 +266,44 @@
         </div>  
     </section>
 
+    <!-- Separador -->
+    <section class="products__separatorbox ">
+        
+        <div  class="products__separator ">
+            <h3 class="mb-2" data-aos="zoom-in">OtterISS CRM was created to solve the paradigm of extensive implementation margins, while keeping your solution close to your needs, minimizing the struggles of rigid, outdated and expensive solutions. OtterISS is a creative, efficient and user friendly companion.</h3> 
+        </div>                    
+    </section>
+
     <!-- Product Features -->
     <section id="features">
         
         <div class="container">
             <div class="row justify-content-center align-items-center mb-5">
-                <div class="col-lg-4 features__image__container">
-                    <img class="features__image" src="../assets/otterflag.png" alt="">
+                <div class="col-lg-4 features__image__container" data-aos="fade-right">
+                    <img class="features__image" src="../assets/idea.svg" alt="">
                 </div>
                 
-                <div class="col-lg-4 features__text">
+                <div class="col-lg-4 features__text" data-aos="fade-left">
                     <h4>Lorem, ipsum.</h4>
                     <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel officiis facere impedit, minima id unde quas eius quidem omnis commodi saepe provident delectus amet eligendi sint perferendis aut dolor voluptatem molestiae dolore consequatur rerum tenetur quos laboriosam? Mollitia, facere dolore.</P>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center mb-5 reverse">
-                <div class="col-lg-4 features__image__container">
-                    <img class="features__image" src="../assets/otterflag.png" alt="">
+                <div class="col-lg-4 features__image__container" data-aos="fade-left">
+                    <img class="features__image" src="../assets/megaphone.svg" alt="">
                 </div>
                 
-                <div class="col-lg-4 features__text">
+                <div class="col-lg-4 features__text" data-aos="fade-right">
                     <h4>Lorem, ipsum.</h4>
                     <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel officiis facere impedit, minima id unde quas eius quidem omnis commodi saepe provident delectus amet eligendi sint perferendis aut dolor voluptatem molestiae dolore consequatur rerum tenetur quos laboriosam? Mollitia, facere dolore.</P>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center mb-5">
-                <div class="col-lg-4 features__image__container">
-                    <img class="features__image" src="../assets/otterflag.png" alt="">
+                <div class="col-lg-4 features__image__container" data-aos="fade-right">
+                    <img class="features__image" src="../assets/planets.svg" alt="">
                 </div>
                 
-                <div class="col-lg-4 features__text">
+                <div class="col-lg-4 features__text" data-aos="fade-left">
                     <h4>Lorem, ipsum.</h4>
                     <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel officiis facere impedit, minima id unde quas eius quidem omnis commodi saepe provident delectus amet eligendi sint perferendis aut dolor voluptatem molestiae dolore consequatur rerum tenetur quos laboriosam? Mollitia, facere dolore.</P>
                 </div>
@@ -301,6 +311,14 @@
         
         </div>
         <div class="features__gradient"></div>
+    </section>
+
+    <!-- Separador -->
+    <section class="products__separatorbox ">
+        
+        <div  class="products__separator ">
+            <h3 class="mb-2" data-aos="zoom-in">OtterISS CRM was created to solve the paradigm of extensive implementation margins, while keeping your solution close to your needs, minimizing the struggles of rigid, outdated and expensive solutions. OtterISS is a creative, efficient and user friendly companion.</h3> 
+        </div>                    
     </section>
 
     <!-- Footer -->
@@ -348,38 +366,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../main.js"></script>
 
-<script>
-    const toggleMenu = document.querySelector('#check');
-    const body = document.body;
-    let accionMenu = () =>{ 
-        if (toggleMenu.checked) {
-        body.style.position = 'fixed';
-        body.style.overflow = 'hidden';
-        } else {
-            body.style.position = '';
-            body.style.overflow = '';
-        }
-    } 
-    toggleMenu.addEventListener('change', accionMenu);
-
-    const toggleMenuLink = document.querySelector('.with__link');
-    const element = document.getElementById('collapseMenu');
-
-
-    toggleMenuLink.addEventListener("click", function(){
-        console.log(toggleMenu)
-        if(toggleMenu.checked){
-            toggleMenu.checked = false;
-            accionMenu();
-            element.classList.remove('show');
-        }
-    });
-
-</script>
-
-</html>
 </body>
 
 </html>

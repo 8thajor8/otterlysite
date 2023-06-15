@@ -1,5 +1,12 @@
+.productsection__maincontainer{
+    overflow: hidden;
+}
 .scbanner{
     background-image: url(../assets/backgroundscmob.svg);
+}
+
+#features{
+    overflow: hidden;
 }
 
 .productsection__serviceimg__container__sc{
@@ -7,8 +14,11 @@
     width: 65%;
     top: 90%;
     left: 75%;
-    transform: translate(-50%, -70%) rotate(-90deg);
-    overflow: hidden;
+    overflow:visible;
+    img{
+        transform: translate(-50%, -70%) rotate(-90deg);
+        overflow: hidden;
+    }
     
 }
 
@@ -54,7 +64,10 @@
     .productsection__serviceimg__container__sc{
         top: 88%;
         left: 75%;
-        transform: translate(-50%, -70%) rotate(-45deg);
+        img{
+            transform: translate(-50%, -70%) rotate(-45deg);
+            overflow: visible;
+        }
     }
 
 }
@@ -72,9 +85,12 @@
         
         top: 55%;
         left: 70%;
-        transform: translate(-50%, -70%) rotate(0deg);
         padding: 0;
         width: 50%;
+        img{
+            transform: translate(-50%, -70%) rotate(0deg);
+            overflow: visible;
+        }
     }
     .productsection__textcontainer__sc{
         padding-left: 2rem;
@@ -100,6 +116,10 @@
         
         top: 60%;
         left: 60%;
+        img{
+        transform: translate(-50%, -70%);
+        overflow: visible;
+    }
     }
     .productsection__textcontainer__sc{
         h2{

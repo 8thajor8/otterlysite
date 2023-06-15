@@ -10,8 +10,11 @@
     width: 45%;
     top: 90%;
     left: 78%;
-    transform: translate(-50%, -70%) ;
-    overflow: hidden;
+    overflow:visible;
+    img{
+        transform: translate(-50%, -70%) ;
+        overflow: hidden;
+    }
     
 }
 
@@ -62,7 +65,10 @@
         width: 38%;
         top: 88%;
         left: 75%;
-        transform: translate(-55%, -75%) rotate(-45deg);
+        img{
+            transform: translate(-50%, -70%) rotate(-45deg);
+            overflow: hidden;
+        }
     }
 
 }
@@ -71,9 +77,13 @@
     .productsection__serviceimg__container__naut{
         top: 60%;
         left: 75%;
-        transform: translate(-50%, -70%) rotate(0deg);
         padding: 0;
         width: 35%;
+        img{
+            transform: translate(-50%, -70%) rotate(0deg);
+            overflow: hidden;
+        }
+        
     }
     .productsection__textcontainer__naut{
         padding-left: 2rem;
@@ -101,8 +111,8 @@
 
     .productsection__serviceimg__container__naut{
         width: 25%;
-        top: 65%;
-        left: 70%;
+        top: 60%;
+        left: 65%;
     }
     
     
